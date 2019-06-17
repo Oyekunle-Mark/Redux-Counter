@@ -4,6 +4,7 @@ module.exports = {
     es6: true
   },
   extends: "airbnb",
+  parser: "babel-eslint",
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -18,6 +19,11 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "comma-dangle": 0,
-    "quotes": 0
+    "quotes": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/button-has-type": 0,
+    "arrow-parens": 0,
+    "no-shadow": 0
   }
 };
